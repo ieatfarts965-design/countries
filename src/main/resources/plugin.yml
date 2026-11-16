@@ -1,0 +1,18 @@
+name: Countries
+version: 1.0.0
+main: com.aternosplus.countries.CountriesPlugin
+api-version: '1.21'
+author: ieatfarts965-design
+description: Countries, diplomacy and war protection.
+commands:
+  country:
+    description: Country management and diplomacy.
+    usage: /country
+    aliases: [countries, nation]
+  war:
+    description: Declare, accept and end wars.
+    usage: /war
+permissions:
+  countries.admin:
+    description: Manage countries and wars.
+    default: op
