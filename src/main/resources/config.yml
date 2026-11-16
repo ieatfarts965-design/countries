@@ -1,0 +1,63 @@
+# Countries available in the first-join selection menu.
+# Players may only belong to one country at a time.
+countries:
+  - Ukraine
+  - United States
+  - United Kingdom
+  - Germany
+  - France
+  - Poland
+  - Canada
+  - Australia
+  - Japan
+  - South Korea
+  - China
+  - India
+  - Brazil
+  - Argentina
+  - Mexico
+  - Spain
+  - Portugal
+  - Italy
+  - Netherlands
+  - Belgium
+  - Switzerland
+  - Austria
+  - Sweden
+  - Norway
+  - Finland
+  - Denmark
+  - Iceland
+  - Ireland
+  - Greece
+  - Turkey
+  - Romania
+  - Bulgaria
+  - Hungary
+  - Czechia
+  - Slovakia
+  - Croatia
+  - Serbia
+  - Slovenia
+  - Lithuania
+  - Latvia
+  - Estonia
+  - Moldova
+  - Georgia
+  - Armenia
+  - Kazakhstan
+  - New Zealand
+  - South Africa
+  - Egypt
+  - Saudi Arabia
+  - Indonesia
+  - Thailand
+  - Vietnam
+  - Philippines
+  - Pakistan
+  - Bangladesh
+  - Nigeria
+  - Morocco
+  - Chile
+  - Peru
+  - Colombia
