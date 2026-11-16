@@ -152,8 +152,9 @@ public final class CountriesPlugin extends JavaPlugin implements Listener, Comma
                 if(args.length>1) c=findCountry(String.join(" ",Arrays.copyOfRange(args,1,args.length)));
                 if(c==null) c=country(p.getUniqueId());
                 if(c==null) { msg(p,"You are not in a country."); return true; }
-                long members=data.getConfigurationSection("players")==null?0:data.getConfigurationSection("players").getKeys(false).stream().filter(id->c.equalsIgnoreCase(data.getString("players."+id))).count();
-                msg(p,c+" | Members: "+members+" | Leader: "+Bukkit.getOfflinePlayer(UUID.fromString(data.getString("leaders."+c.toLowerCase(Locale.ROOT),p.getUniqueId().toString()))).getName());
+                final String infoCountry = c;
+                long members=data.getConfigurationSection("players")==null?0:data.getConfigurationSection("players").getKeys(false).stream().filter(id->infoCountry.equalsIgnoreCase(data.getString("players."+id))).count();
+                msg(p,infoCountry+" | Members: "+members+" | Leader: "+Bukkit.getOfflinePlayer(UUID.fromString(data.getString("leaders."+infoCountry.toLowerCase(Locale.ROOT),p.getUniqueId().toString()))).getName());
             }
             case "leave" -> {
                 if(c==null) { msg(p,"You are not in a country."); return true; }
