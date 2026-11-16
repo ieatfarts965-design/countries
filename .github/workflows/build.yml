@@ -18,4 +18,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: Countries
-          path: target/Countries-*.jar
+          path: target/*-shaded.jar
+          if-no-files-found: error
